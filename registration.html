@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+</head>
+<body>
+    <h2><center>Student Registration Form</center></h2>
+
+    <form action="/submit_registration" method="post">
+        <center><label for="first_name">First Name:</label>
+        <input type="text" id="first_name" name="first_name" required></center><br><br>
+
+        <center><label for="last_name">Last Name:</label>
+        <input type="text" id="last_name" name="last_name" required></center><br><br>
+
+        <center><label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required></center><br><br>
+
+        <center><label for="email">Email:</label>
+        <input type="email" id="email" name="email" required></center><br><br>
+
+        <center><label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required></center><br><br>
+
+        <center><label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label></center><br><br>
+
+        <center><label for="address">Address:</label>
+        <textarea id="address" name="address" rows="4" cols="30" required></textarea></center><br><br>
+
+
+        <center><label for="course">Course:</label>
+        <select id="course" name="course" required>
+            <option value="computer_science">Computer Science</option>
+            <option value="engineering">Engineering</option>
+            <option value="mathematics">Mathematics</option>
+            <option value="business">Business</option>
+        </select></center><br><br>
+
+    <center><button type="submit">Submit</button></center>
+    </form>
+</body>
+</html>
